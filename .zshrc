@@ -16,11 +16,17 @@ function git-prompt {
   echo "$branch"
 }
 
+# path
+export PATH=~/.cargo/bin:$PATH
+
+
 # alias
 alias ccw='cc -Wall -Wextra -Werror'
-alias zellij='bash <(curl -Ls zellij.dev/launch)'
+alias zellij='~/.zsh/zellij'
 alias graph='git log --decorate --graph --all --name-status'
 
+alias francinette=~/francinette/tester.sh
+alias paco=~/francinette/tester.sh
 function precmd
 {
   setopt PROMPT_SUBST
